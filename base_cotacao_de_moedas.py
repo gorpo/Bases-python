@@ -2,10 +2,10 @@ import  requests
 import time
 
 def moedas(moeda):
-	url = ('https://economia.awesomeapi.com.br/json/all')
-	req = requests.get(url, timeout=3000)
-	retorno = req.json()
-	valores = retorno[moeda]
+	url = ('https://economia.awesomeapi.com.br/json/all')  #url da API pode ser mudada para outra 
+	req = requests.get(url, timeout=3000)     #faz o request
+	retorno = req.json()                #muita atençao neste "retorno" de um print nele para entender oque ele faz
+	valores = retorno[moeda]      #a string retorno volta um dicionario com varios dados aqui começo desempacotar este dicionario por isto falei para darem um print na string "retorno"
 	conversao = valores['codein']
 	data = valores['create_date']
 	nome = valores['name']
