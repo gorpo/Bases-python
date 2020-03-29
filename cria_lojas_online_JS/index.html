@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="refresh" content="120">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://kit.fontawesome.com/a80232805f.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <title>STORE CREATOR | Gorpo Orko</title>
+  <style>
+       div {
+         min-width: 300px;
+         width: 50%;
+         margin: 10px auto;
+       }
+       input,
+       textarea {
+         width: 100%;
+         min-width: 250px;
+       }
+       </style>
+</head>
+
+<body>
+  <div class="titulo">
+    
+  </div>
+  <h1> <i class="fas fa-terminal blink_me"></i> TCXS STORE CREATOR | PLAYSTATION ONE </h1>
+       <div>
+        <br>
+        <br>
+        <h3>Criar jogos de PlayStation1</h3>
+         <br>
+         <input type="text" id="nome_xml"  placeholder="digite o nome do xml"><br>
+         <input type="text" id="nome_jogo" placeholder="Digite o titulo do jogo"></input><br>
+         <input type="text" id="desc_jogo" placeholder="Digite uma descrição"></input><br>
+         <input type="text" id="link_jogo" placeholder="Digite um link"></input><br>
+       </div>
+       <div>
+        <br>
+         <button onclick="salvar()">Salvar</button>
+       </div>
+
+
+<!-- Biblioteca que adicionara o código -->
+   <script type="text/javascript" src="FileSaver.min.js"></script>
+   <!-- função ao clicar em salvar -->
+   <script>
+   function salvar() {
+      let nome_xml = document.getElementById("nome_xml").value;
+      let nome_jogo = document.getElementById("nome_jogo").value;
+      let desc_jogo = document.getElementById("desc_jogo").value;
+      let link_jogo = document.getElementById("link_jogo").value;
+
+      let compilado = '<XMBML version="1.0">\n  <View id="ps1_items_link">\n  <Attributes>\n    <Table key="ps1_item_link">\n      <Pair key="icon"><String>/dev_hdd0/game/HENBSTORE/USRDIR/IMAGES/PS1/'+nome_xml+'.jpg</String></Pair>\n      <Pair key="title"><String>TCXS -' + nome_jogo + '</String></Pair>\n      <Pair key="info"><String>TCXS -' + desc_jogo + '</String></Pair>\n      <Pair key="module_name"><String>webrender_plugin</String></Pair>\n      <Pair key="module_action"><String>'+ link_jogo + '</String></Pair>\n    </Table>\n  </Attributes>\n  <Items>\n     <Query class="type:x-xmb/module-action" key="ps1_item_link" attr="ps1_item_link"/>\n  </Items>\n </View>\n</XMBML>';
+
+
+      let conteudo = new Blob([compilado], { type: "text/plain;charset=utf-8" });
+      saveAs(conteudo, nome_xml + ".xml");
+   }
+   </script>
+
+   <footer class="footer">
+        <div class="selecionar"> 
+        <script language=javascript type="text/javascript">
+        
+          now = new Date
+          
+          monName = new Array("janeiro", "fevereiro", "março", "abril", "Maio", "junho", "agosto", "outubro", "novembro", "dezembro");
+          
+          document.write("Última Atualização: " + now.getDate() + " de " + monName[now.getMonth()] + " de " + now.getFullYear() + " as " + now.getHours() + ":" + (now.getMinutes()<10?'0':'') + now.getMinutes())
+        </script>
+        </div>
+
+  
+      </footer>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
