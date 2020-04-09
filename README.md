@@ -20,6 +20,8 @@ Recomendações
 -  Sistema operacional: Todos
 -  Python 3.6+
 
+-->> Dica:
+Pyinstaller --onefile --noconsole --windowed
 
 ©2020 - @GorpoOrko
 
