@@ -1,0 +1,844 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>788</width>
+    <height>645</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="menu_topo">
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(85, 170, 255);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="barra_ativa_menu">
+         <property name="maximumSize">
+          <size>
+           <width>50</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(35, 35, 35);</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QPushButton" name="botao_ativa_menu">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>51</width>
+            <height>50</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>50</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+	background-image: url(:/ativa_menu/imagens/menu-4-24.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	border: none;
+}
+QPushButton:hover {
+	background-color: rgb(30,144,255);
+}
+QPushButton:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="Barra_informacoes">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(0, 99, 177);</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="background">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="menu_esquerda">
+         <property name="minimumSize">
+          <size>
+           <width>50</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>50</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(35, 35, 35);</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QFrame" name="barra_btn_home">
+          <property name="geometry">
+           <rect>
+            <x>-10</x>
+            <y>0</y>
+            <width>261</width>
+            <height>50</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QFrame {
+	
+	
+	border: none;
+}
+QFrame:hover {
+	background-color: rgb(30,144,255);
+}
+QFrame:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QPushButton" name="btn_home">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>0</y>
+             <width>50</width>
+             <height>50</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+	background-image: url(:/home/imagens/home-5-24.png);
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: none;
+}
+QPushButton:hover {
+	background-color: rgb(30,144,255);
+}
+QPushButton:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="texto_btn_home">
+           <property name="geometry">
+            <rect>
+             <x>60</x>
+             <y>10</y>
+             <width>81</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+             <pointsize>18</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+	background-color: transparent;
+	color: rgb(255, 255, 255);
+}</string>
+           </property>
+           <property name="text">
+            <string>home</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QFrame" name="barra_btn_camera">
+          <property name="geometry">
+           <rect>
+            <x>-10</x>
+            <y>50</y>
+            <width>261</width>
+            <height>50</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QFrame {
+	
+	
+	border: none;
+}
+QFrame:hover {
+	background-color: rgb(30,144,255);
+}
+QFrame:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QPushButton" name="btn_camera">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>0</y>
+             <width>50</width>
+             <height>50</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+	
+	background-image: url(:/camera/imagens/screenshot-24.png);
+	background-repeat: no-repeat;
+	background-color: transparent;
+	background-position: center;
+	border: none;
+}
+QPushButton:hover {
+	background-color: rgb(30,144,255);
+}
+QPushButton:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="texto_btn_camera">
+           <property name="geometry">
+            <rect>
+             <x>60</x>
+             <y>10</y>
+             <width>81</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+             <pointsize>18</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+	background-color: transparent;
+	color: rgb(255, 255, 255);
+}</string>
+           </property>
+           <property name="text">
+            <string>camera</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QFrame" name="barra_btn_snes">
+          <property name="geometry">
+           <rect>
+            <x>-10</x>
+            <y>100</y>
+            <width>261</width>
+            <height>50</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QFrame {
+	
+	
+	border: none;
+}
+QFrame:hover {
+	background-color: rgb(30,144,255);
+}
+QFrame:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QPushButton" name="btn_snes">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>0</y>
+             <width>50</width>
+             <height>50</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+	background-image: url(:/snes/imagens/joystick-2-24.png);
+	background-repeat: no-repeat;
+	background-color: transparent;
+	background-position: center;
+	border: none;
+}
+QPushButton:hover {
+	background-color: rgb(30,144,255);
+}
+QPushButton:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="texto_btn_snes">
+           <property name="geometry">
+            <rect>
+             <x>60</x>
+             <y>10</y>
+             <width>121</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+             <pointsize>18</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+	background-color: transparent;
+	color: rgb(255, 255, 255);
+}</string>
+           </property>
+           <property name="text">
+            <string>hack snes</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QFrame" name="barra_btn_deepnude">
+          <property name="geometry">
+           <rect>
+            <x>-10</x>
+            <y>150</y>
+            <width>261</width>
+            <height>50</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QFrame {
+	
+	
+	border: none;
+}
+QFrame:hover {
+	background-color: rgb(30,144,255);
+}
+QFrame:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QPushButton" name="btn_deepnude">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>0</y>
+             <width>50</width>
+             <height>50</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+	background-image: url(:/deepnude/imagens/icons8-bottom-24.png);
+	background-repeat: no-repeat;
+	background-color: transparent;
+	background-position: center;
+	border: none;
+}
+QPushButton:hover {
+	background-color: rgb(30,144,255);
+}
+QPushButton:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="texto_btn_deepnude">
+           <property name="geometry">
+            <rect>
+             <x>60</x>
+             <y>10</y>
+             <width>131</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+             <pointsize>18</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+	background-color: transparent;
+	color: rgb(255, 255, 255);
+}</string>
+           </property>
+           <property name="text">
+            <string>deep nude</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QFrame" name="barra_btn_bancodados">
+          <property name="geometry">
+           <rect>
+            <x>-10</x>
+            <y>430</y>
+            <width>261</width>
+            <height>50</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QFrame {
+	
+	
+	border: none;
+}
+QFrame:hover {
+	background-color: rgb(30,144,255);
+}
+QFrame:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QPushButton" name="btn_bancodados">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>0</y>
+             <width>50</width>
+             <height>50</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+	background-image: url(:/banco_de_dados/imagens/data-configuration-24.png);
+	background-repeat: no-repeat;
+	background-color: transparent;
+	background-position: center;
+	border: none;
+}
+QPushButton:hover {
+	background-color: rgb(30,144,255);
+}
+QPushButton:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="texto_btn_bancodados">
+           <property name="geometry">
+            <rect>
+             <x>60</x>
+             <y>10</y>
+             <width>161</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+             <pointsize>18</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+	background-color: transparent;
+	color: rgb(255, 255, 255);
+}</string>
+           </property>
+           <property name="text">
+            <string>database</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QFrame" name="barra_btn_servidor">
+          <property name="geometry">
+           <rect>
+            <x>-10</x>
+            <y>380</y>
+            <width>261</width>
+            <height>50</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QFrame {
+	
+	
+	border: none;
+}
+QFrame:hover {
+	background-color: rgb(30,144,255);
+}
+QFrame:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QPushButton" name="btn_servidor">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>0</y>
+             <width>50</width>
+             <height>50</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+	background-image: url(:/server/imagens/server-24.png);
+	background-repeat: no-repeat;
+	background-color: transparent;
+	background-position: center;
+	border: none;
+}
+QPushButton:hover {
+	background-color: rgb(30,144,255);
+}
+QPushButton:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="texto_btn_servidor">
+           <property name="geometry">
+            <rect>
+             <x>60</x>
+             <y>10</y>
+             <width>161</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+             <pointsize>18</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+	background-color: transparent;
+	color: rgb(255, 255, 255);
+}</string>
+           </property>
+           <property name="text">
+            <string>servidor </string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QFrame" name="barra_btn_settings">
+          <property name="geometry">
+           <rect>
+            <x>-10</x>
+            <y>480</y>
+            <width>261</width>
+            <height>50</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QFrame {
+	
+	
+	border: none;
+}
+QFrame:hover {
+	background-color: rgb(30,144,255);
+}
+QFrame:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QPushButton" name="btn_settings">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>0</y>
+             <width>50</width>
+             <height>50</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+	background-image: url(:/configuracoes/imagens/services-24.png);
+	background-repeat: no-repeat;
+	background-color: transparent;
+	background-position: center;
+	border: none;
+}
+QPushButton:hover {
+	background-color: rgb(30,144,255);
+}
+QPushButton:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="texto_btn_settings">
+           <property name="geometry">
+            <rect>
+             <x>60</x>
+             <y>10</y>
+             <width>111</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+             <pointsize>18</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+	background-color: transparent;
+	color: rgb(255, 255, 255);
+}</string>
+           </property>
+           <property name="text">
+            <string>settings</string>
+           </property>
+          </widget>
+         </widget>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="area_principal">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(66, 66, 66);</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_3"/>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>788</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="files_rc.qrc"/>
+ </resources>
+ <connections/>
+</ui>
